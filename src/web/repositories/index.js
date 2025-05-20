@@ -4,6 +4,8 @@ const dealsJSON = require("../data/deals");
 const flightsJSON = require("../data/flights");
 const _BookRepository = require("./book.repository");
 const _FlightsRepository = require("./flights.repository");
+const { DefaultAzureCredential } = require("@azure/identity");
+const axios = require("axios");
 
 let bookRepository = null;
 
